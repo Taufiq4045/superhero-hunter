@@ -9,6 +9,7 @@ Superhero Hunter is a web application that allows users to explore and discover 
 - [File Structure](#file-structure)
 - [Setup](#setup)
 - [Usage](#usage)
+- [Customization](#customization)
 - [Contributing](#contributing)
 
 ## Features
@@ -20,7 +21,7 @@ Superhero Hunter is a web application that allows users to explore and discover 
 
 ## Demo
 
-[View Demo]()
+[View Demo](https://taufiq4045.github.io/superhero-hunter/)
 
 ## File Structure
 
@@ -69,6 +70,10 @@ git clone https://github.com/your-username/superhero-hunter.git
 Open index.html to start exploring superheroes.
 Click on a superhero to view detailed information.
 Add or remove superheroes from favorites on the favorites page.
+
+## Customization
+
+The application can be customized by modifying the CSS styles and JavaScript logic. Refer to the code comments for guidance.
 
 ## Contributing
 
