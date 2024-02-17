@@ -1,0 +1,51 @@
+@import 'common.css';
+
+body {
+  height: 100vh;
+}
+
+.fav-container {
+  margin-top: 7rem;
+}
+
+h1 {
+  color: var(--light-color);
+}
+
+h2 {
+  margin-top: 2rem;
+  color: rgb(177, 176, 176);
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+
+.card-title {
+  margin-bottom: 0;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+  color: #fff;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  min-width: 100%;
+  z-index: 1;
+}

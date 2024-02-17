@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Set viewport meta property -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Superhero Hunter is a web application for exploring and discovering Marvel superheroes."
+    />
+    <meta name="keywords" content="Superhero, Marvel, Heroes, Comics" />
+
+    <meta property="og:title" content="Superhero Hunter" />
+    <meta
+      property="og:description"
+      content="Superhero Hunter is a web application for exploring and discovering Marvel superheroes."
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="assets/favicon.ico" />
+
+    <meta name="twitter:title" content="Superhero Hunter" />
+    <meta
+      name="twitter:description"
+      content="Superhero Hunter is a web application for exploring and discovering Marvel superheroes."
+    />
+    <meta name="twitter:image" content="assets/favicon.ico" />
+    <!-- Title of the page -->
+    <title>Superhero Details</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/png" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/png" />
+    <!-- Include necessary stylesheets and libraries -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/superhero.css" />
+  </head>
+  <body>
+    <header class="header-bar">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-2">
+            <div class="logo">
+              <img src="assets/marvel-logo.svg" alt="Superhero Hunter Logo" />
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <!-- Search bar added here -->
+            <form class="app-header-search">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search your superhero here ..."
+                  name="search"
+                />
+                <div class="input-group-append">
+                  <button
+                    type="submit"
+                    class="btn btn-outline-light search-btn"
+                  >
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="search-list" id="search-list"></div>
+            </form>
+          </div>
+          <div class="col-lg-3 d-flex justify-content-end align-items-center">
+            <button
+              class="btn btn-outline-light mr-4"
+              onclick="window.location.href='index.html'"
+            >
+              Back
+            </button>
+            <div class="user-info">
+              <img
+                src="assets/user.png"
+                alt="User Avatar"
+                class="user-avatar"
+              />
+              <span class="username text-white">John Doe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-wrapper">
+      <div class="app">
+        <!-- app header -->
+        <div class="app-header">
+          <h2 class="app-header-title">Superhero <span>Hunter</span></h2>
+        </div>
+        <!-- end of app header -->
+
+        <div class="app-body">
+          <div class="app-body-content">
+            <!-- app body thumbnail -->
+            <div
+              class="app-body-content-thumbnail"
+              id="superheroDetailsContainer"
+            ></div>
+            <!-- end of app body thumbnail -->
+
+            <div class="app-body-content-list">
+              <!-- Tabs, buttons, and other details go here -->
+              <div class="name"></div>
+
+              <!-- tabs head -->
+              <div class="app-body-tabs-head">
+                <button type="button" class="tab-head-single" data-id="1">
+                  <span>Comics</span>
+                </button>
+                <button type="button" class="tab-head-single" data-id="2">
+                  <span>Events</span>
+                </button>
+                <button type="button" class="tab-head-single" data-id="3">
+                  <span>Series</span>
+                </button>
+                <button type="button" class="tab-head-single" data-id="4">
+                  <span>Stories</span>
+                </button>
+              </div>
+
+              <!-- tabs body -->
+              <div class="app-body-tabs-body">
+                <ul class="tab-body-single Comics"></ul>
+                <ul class="tab-body-single Events"></ul>
+                <ul class="tab-body-single Series"></ul>
+                <ul class="tab-body-single Stories"></ul>
+              </div>
+              <!-- end of tabs head -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <img src="assets/Marvel-Studios-Logo.png" alt="Marvel Comics Logo" />
+        </div>
+        <div class="footer-links">
+          <!-- Your navigation links go here -->
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script type="module" src="js/superhero.js"></script>
+  </body>
+</html>

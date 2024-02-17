@@ -1,0 +1,218 @@
+@import 'common.css';
+
+body {
+  font-family: var(--poppins-font);
+}
+
+.app-body-tabs-head button {
+  font-family: inherit;
+  outline: 0;
+  border: none;
+  background-color: transparent;
+}
+
+li {
+  list-style-type: none;
+}
+
+.app-body-content-thumbnail img {
+  width: 100%;
+  height: 600px;
+  display: block;
+}
+.main-wrapper {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+.app {
+  background-color: var(--dark-color);
+  margin: 6rem 2rem 2rem 2rem;
+  padding: 5rem;
+  border-radius: 6px;
+  color: var(--light-color);
+  -webkit-box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.5);
+}
+.app-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.app-header-title span {
+  color: var(--red-color);
+}
+
+/* app body */
+.app-body {
+  margin-top: 4rem;
+  height: 600px;
+}
+
+/* app body tabs heads */
+.app-body-tabs-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  padding-bottom: 1.6rem;
+  margin: 2.4rem 0 0.5rem 0;
+}
+.tab-head-single {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.tab-head-single:hover {
+  opacity: 0.9;
+}
+.tab-head-single.active-tab::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1.7rem;
+  width: 100%;
+  height: 4px;
+  background-color: var(--red-color);
+}
+
+/* app body content */
+.app-body-content {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  -webkit-column-gap: 4rem;
+  -moz-column-gap: 4rem;
+  column-gap: 4rem;
+  margin-right: 2rem;
+}
+.app-body-content-thumbnail {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.app-body-content-list .name {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-top: -1.2rem;
+}
+.app-body-tabs-body {
+  /* margin-top: 3.6rem; */
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.app-body-tabs-body::-webkit-scrollbar {
+  width: 7px;
+}
+.app-body-tabs-body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.app-body-tabs-body::-webkit-scrollbar-thumb {
+  background-color: var(--red-color);
+  border-radius: 5px;
+}
+
+/* Series */
+.Comics,
+.Series,
+.Events,
+.Stories {
+  display: none;
+}
+
+.Comics li,
+.Series li,
+.Events li,
+.Stories li {
+  margin: 3.2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.Comics li span:first-child i,
+.Series li span:first-child i,
+.Events li span:first-child i,
+.Stories li span:first-child i {
+  color: var(--yellow-color);
+  margin-right: 1.4rem;
+}
+
+.Comics li span:first-child,
+.Series li span:first-child,
+.Events li span:first-child,
+.Stories li span:first-child {
+  text-transform: capitalize;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 4rem;
+}
+
+.Comics li span:last-child,
+.Series li span:last-child,
+.Events li span:last-child,
+.Stories li span:last-child {
+  font-weight: 600;
+  text-transform: capitalize;
+  background-color: var(--red-color);
+  border-radius: 2rem;
+  padding: 0 1rem;
+  text-align: left;
+  width: fit-content;
+}
+
+/* show-tab */
+.show-tab {
+  display: block;
+}
+
+/* Add this CSS code to your existing stylesheet */
+.custom-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.serial-number {
+  flex-shrink: 0; /* Prevent serial number from shrinking */
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.custom-list-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-list-item span {
+  margin-bottom: 0.5rem; /* Adjust the margin as needed between two sections */
+}
